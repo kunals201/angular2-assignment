@@ -1,0 +1,6 @@
+<h1>Your task Lists</h1>
+<p *ngFor="let detail of details"><label>Date:</label>
+  {{detail.date}}<br><label>Title:-</label>
+  {{detail.title}}<br><label>Description:-</label>
+  {{detail.description}}<br><label>Priority:-</label>
+  {{detail.priority}}<br><input type="button" value="Edit" (click)=edit(detail)> <input type="button" value="Done" (click)=done(detail)><br></p>

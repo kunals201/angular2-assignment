@@ -1,0 +1,12 @@
+<h1>Create Task</h1><br/>
+<form (ngSubmit)="submit(date.value,title.value,description.value,priority.value)">
+  <label>Date:- </label><input type="text" class="form-control" placeholder="02/8/2017" value="{{data.date}}" #date><br/><br/>
+  <label>Title:- </label><input type="text" class="form-control" placeholder="Title" #title value="{{data.title}}"><br/><br/>
+  <label>Description:- </label><input type="text" class="form-control" placeholder="Description" #description value="{{data.description}}"><br/><br/>
+  <label>Priority:- </label><br><select #priority>
+  <option value="high">High</option>
+  <option value="medium">Medium</option>
+  <option value="low">Low</option>
+</select><br><br>
+<button type="submit" (click)="alerting()">Submit</button>
+</form>
